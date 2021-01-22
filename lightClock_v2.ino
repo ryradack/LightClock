@@ -29,7 +29,7 @@ void setup(){
   byte numDigits = 2;
   byte digitPins[] = {12, 13};
   byte segmentPins[] = {9, 2, 3, 5, 6, 8, 7, 4};
-  bool resistorsOnSegments = false;//changed from true
+  bool resistorsOnSegments = true;
   bool updateWithDelaysIn = true;
   byte hardwareConfig = COMMON_CATHODE;
   sevseg.begin(hardwareConfig, numDigits, digitPins, segmentPins, resistorsOnSegments);
